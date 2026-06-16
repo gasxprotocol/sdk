@@ -1,0 +1,38 @@
+{
+  "name": "@gasx/sdk",
+  "type": "module",
+  "version": "0.1.1",
+  "description": "GasX SDK: oracle signer, strategy registry, ERC-7677 orchestrator (paymasterAndData encoder), and account adapter — all matching the on-chain GasXPaymasterBase wire format.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gasxprotocol/sdk.git",
+    "directory": "packages/sdk"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "viem": "^2.28.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.9"
+  }
+}

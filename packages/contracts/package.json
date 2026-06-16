@@ -1,0 +1,35 @@
+{
+  "name": "@gasx/contracts",
+  "type": "module",
+  "version": "0.1.1",
+  "description": "GasX contract ABIs and addresses: viem-ready ABI arrays for the GasX paymaster protocol plus the canonical EntryPoint v0.9 address and a per-chain deployments map.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gasxprotocol/sdk.git",
+    "directory": "packages/contracts"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.9"
+  }
+}
