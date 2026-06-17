@@ -1,6 +1,7 @@
 # GasX SDK
 
-The public off-chain integration layer for the **GasX** modular ERC-4337 paymaster protocol
+The public off-chain integration layer for **GasX** — an on-chain aggregate spend-ceiling for agent fleets,
+whose proven instance today is a modular ERC-4337 gas-sponsorship paymaster
 (contracts: [`gasxprotocol/contracts`](https://github.com/gasxprotocol/contracts)).
 
 | Package | What |
