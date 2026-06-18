@@ -36,3 +36,16 @@ export { encodePaymasterAndData } from "./encodePaymasterData.js";
 export type { Call, IGasXAccountAdapter } from "./IGasXAccountAdapter.js";
 export { BATCH_SELECTOR, EXECUTE_SELECTOR } from "./IGasXAccountAdapter.js";
 export { GasXSimpleAccountAdapter } from "./GasXSimpleAccountAdapter.js";
+
+// EIP-3009 receiveWithAuthorization — the paying agent's authorization to the settlement router
+export {
+  RECEIVE_WITH_AUTHORIZATION_TYPES,
+  tokenDomain,
+  signReceiveAuthorization,
+  randomNonce,
+} from "./eip3009.js";
+export type { ReceiveAuthorization } from "./eip3009.js";
+
+// x402 value settlement (B3): router ABI, settle encoder, and merchant payment requirements
+export { GASX_SETTLEMENT_ROUTER_ABI, encodeSettle, buildX402PaymentRequirements } from "./settlement.js";
+export type { SettleArgs, X402PaymentRequirements } from "./settlement.js";
